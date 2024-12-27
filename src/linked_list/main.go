@@ -8,3 +8,9 @@ type Node struct {
 type LinkedList struct {
 	Head *Node
 }
+
+func NewLinkedList() *LinkedList {
+	return &LinkedList{
+		Head: nil,
+	}
+}
