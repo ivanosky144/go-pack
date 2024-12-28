@@ -1,0 +1,23 @@
+name: Build and push Go Pack
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Login to Docker Hub
+        run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build Docker Image
+        run: docker build -t ivanoskytan/go-pack .
+
+      - name: Push Docker Image
+        run: docker push ivanoskytan/go-pack:latest
