@@ -3,7 +3,7 @@ FROM golang:1.22.2 AS builder
 WORKDIR /app
 
 # Copy go.mod and go.sum to handle dependencies first
-COPY go.mod go.sum ./
+COPY go.mod ./
 RUN go mod download
 
 # Copy the internal directory and all necessary Go files
