@@ -5,13 +5,13 @@ Go Pack is a Go library that provides a collection of commonly used data structu
 ## Usage
 
 Add the library to your project by running
-`
+```
 go get github.com/ivanosky144/go-pack
-`
+```
 
 ### Example: Queue
 
-`
+```
 package main
 
 import (
@@ -25,5 +25,5 @@ func main() {
     q.Enqueue(2)
     fmt.Println(q.Dequeue()) // Output: 1
 }
-`
+```
 
