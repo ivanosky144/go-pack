@@ -8,3 +8,7 @@ import (
 	_ "github.com/ivanosky144/go-pack/internal/queue"
 	_ "github.com/ivanosky144/go-pack/internal/stack"
 )
+
+func main() {
+
+}
