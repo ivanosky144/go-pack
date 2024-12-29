@@ -11,5 +11,5 @@ COPY . .
 
 RUN ls -R /app
 
-RUN go build -o gopack ./main
+RUN go build -o gopack ./main.go
 
