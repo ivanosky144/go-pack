@@ -11,5 +11,5 @@ COPY . .
 
 RUN ls -R /app
 
-RUN go build -o gopack ./internal/binary_tree
+RUN go build -o gopack ./internal
 
