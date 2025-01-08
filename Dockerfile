@@ -5,11 +5,8 @@ WORKDIR /app
 COPY go.mod ./
 RUN go mod download
 
-COPY internal/ ./internal/
-
 COPY . .
 
 RUN ls -R /app
 
 RUN go build -o gopack ./main.go
-
